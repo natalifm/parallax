@@ -1,0 +1,93 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg2, .pimg3{
+    opacity: 0.70;
+}
+
+.pimg1{
+    background-image: url('../img/1NY.jpeg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('../img/2NY.jpg');
+    min-height: 500px;
+}
+
+.pimg3{
+    background-image: url('../img/3NY.jpeg');
+    min-height: 500px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-light:hover{
+   background-color:#eee;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.section-grey{
+    background-color:#E6E6FA;
+    color: #696969;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color:transparent;
+    font-weight: 600;
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+    .section{
+        padding: 50px 40px;
+    }
+}
+
